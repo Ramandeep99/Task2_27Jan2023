@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 400px;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 30px;
+            margin-top: 20px;
+        }
+        
+        .grid-container>div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            font-size: 30px;
+            padding: 10px;
+            border: 4px solid red;
+            background-color: black;
+            color: white;
+            border-radius: 40px;
+            font-style: italic;
+        }
+        
+        body {
+            border: 5px solid green;
+            margin: 0%;
+            padding: 0%;
+            background-color: #fff6e9;
+        }
+        
+        #center1 {
+            position: absolute;
+            top: 7%;
+            left: 25%;
+        }
+        
+        .grid-container2 {
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 200px;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .grid-container2>div {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid black;
+            text-align: center;
+            /* font-size: 20px; */
+            padding: 10px;
+            border: 4px dashed red;
+        }
+        
+        .circle {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            font-style: italic;
+        }
+        
+        #menuDiv {
+            text-align: center;
+            font-size: 20px;
+            padding: 0;
+            border: 4px solid red;
+            width: 30%;
+            margin: auto;
+            background-color: black;
+            color: white;
+            border-radius: 50px;
+        }
+        
+        .grid-container3 {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            /* gap: 20px; */
+            padding: 10px;
+            text-align: center;
+            color: rgb(47, 4, 88);
+        }
+        
+        .grid-container3>div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 10px;
+            border: 3px solid rgb(6, 133, 31);
+            margin: 40px;
+            border-radius: 10px;
+            background-color: lightgreen;
+        }
+        
+        .lastDivli {
+            font-size: 24px;
+        }
+        
+        .circle>p {
+            font-weight: 700;
+            /* text-decoration: underline; */
+        }
+        
+        .box {
+            color: lightcoral;
+        }
+        
+        .button {
+            background-color: #4CAF50;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="grid-container">
+        <div style="margin-left: 100px;"> <span> Welcome to Delhi Dhaba </span> <br> <span> here you get quality food. <span></div>
+        <div style="height: 50px;" id="center1">Home Menu Review Contact Us</div>
+        <div style="margin-right: 100px;">
+            <span> Email: Store@gmail.com </span><br>
+            <span> If you find any complain,</span><br><span> Contact Us at: 893*****68 </span>
+        </div>
+    </div>
+
+    <div class="grid-container2" style="align-items: center; margin-bottom: 20px;">
+        <div style="margin-left: 150px; align-items: center; border: 4px solid rgb(83, 83, 83); background-color: aquamarine;" class="circle">
+            <p>&nbsp;&nbsp;EXCITING OFFERS</p>
+            <hr style="color: white;">
+            <p>**GET OUR SPECIAL THALI &nbsp;&nbsp;&nbsp;FOR ONLY RS 100 ONLY ON MONDAY**</p>
+            <hr style="color: white;">
+            <p>&nbsp;PLZ RATE US OUT OF 5</p>
+
+        </div>
+        <div style="margin-right: 90px;" class="box">
+            <h2>Please Register Here</h2>
+            <hr>
+            <form action="" id="form">
+                <label for="fname">First Name:</label><br>
+                <input type="text" name="fname" id=""><br><br>
+                <label for="lname">Last Name: </label><br>
+                <input type="text" name="lname" id=""><br><br>
+                <label for="age">Your Age:  </label><br>
+                <input type="number" name="age"><br><br>
+                <label for="email">Email: </label><br>
+                <input type="email" name="email" id=""><br><br>
+                <label for="dob">Date of Birth: </label><br>
+                <input type="date" name="dob" id=""><br><br>
+                <label for="">Are you more than one person?</label><br>
+                <input type="checkbox" name="" id=""><br><br>
+                <label for="">Do you have cold or cough? </label><br>
+                <input type="checkbox" name="" id=""><br><br>
+                <button type="submit" class="button">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+    <div id="menuDiv">
+        <p>MENU</p>
+    </div>
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+    <div class="grid-container3">
+        <div>
+            <h2>Starters</h2>
+            <hr style="height:3px;border-width:0;color:gray;background-color:gray">
+            <ul>
+                <li class="lastDivli">Paneer Tikka</li>
+                <li class="lastDivli">Tomato Soup</li>
+                <li class="lastDivli">Tikki</li>
+                <li class="lastDivli">Gol Gappa</li>
+                <li class="lastDivli">Veg Raita</li>
+            </ul>
+        </div>
+        <div>
+            <h2>South Indians</h2>
+            <hr style="height:3px;border-width:0;color:gray;background-color:gray">
+            <ul>
+                <li class="lastDivli">Masala Dosa</li>
+                <li class="lastDivli">Idli Sambhar</li>
+                <li class="lastDivli">Onion Dosa</li>
+                <li class="lastDivli">Tomato Uttapam</li>
+                <li class="lastDivli">Vada Sambhar</li>
+            </ul>
+        </div>
+        <div>
+            <h2>Indian Kitchen</h2>
+            <hr style="height:3px;border-width:0;color:gray;background-color:gray">
+            <ul>
+                <li class="lastDivli">Shahi Paneer</li>
+                <li class="lastDivli">kadhai Paneer</li>
+                <li class="lastDivli">Dal Makhni</li>
+                <li class="lastDivli">Poori Sabji</li>
+                <li class="lastDivli">Aloo Gobhi</li>
+            </ul>
+        </div>
+        <div>
+            <h2>Rice and Salad</h2>
+            <hr style="height:3px;border-width:0;color:gray;background-color:gray">
+            <ul>
+                <li class="lastDivli">Plain Rice</li>
+                <li class="lastDivli">Jeera Rice</li>
+                <li class="lastDivli">Veg Pulao</li>
+                <li class="lastDivli">Veg Biryani</li>
+                <li class="lastDivli">Masala Salad</li>
+            </ul>
+        </div>
+        <div>
+            <h2>Tandoori Bread</h2>
+            <hr style="height:3px;border-width:0;color:gray;background-color:gray">
+            <ul>
+                <li class="lastDivli">Butter Roti</li>
+                <li class="lastDivli">Tawa Roti</li>
+                <li class="lastDivli">Plane Roti</li>
+                <li class="lastDivli">Naan</li>
+                <li class="lastDivli">Stuff Naan</li>
+            </ul>
+        </div>
+        <div>
+            <h2>Beverages & Others</h2>
+            <hr style="height:3px;border-width:0;color:gray;background-color:gray">
+            <ul>
+                <li class="lastDivli">Cold Coffee</li>
+                <li class="lastDivli">Coldrinks</li>
+                <li class="lastDivli">Badam Milk</li>
+                <li class="lastDivli">Mineral Water</li>
+                <li class="lastDivli">Cake</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
